@@ -14,7 +14,7 @@ fs.readFile(newsDir, 'utf8', (err, jsonString) => {
 });
 
 let newswire = require('./newswire');
-let latestNews = new newswire(type, 'https://discordapp.com/api/webhooks/682906601191243776/-2oQOfUUeuZoh_MBXN2puFvjUrYeXAFK2smfUuZ4mfVJcXdMs3kX5ZuW535zXdb_sG4_');
+let latestNews = new newswire(latest, 'https://discordapp.com/api/webhooks/682906601191243776/-2oQOfUUeuZoh_MBXN2puFvjUrYeXAFK2smfUuZ4mfVJcXdMs3kX5ZuW535zXdb_sG4_');
 
 
 class newswire {
