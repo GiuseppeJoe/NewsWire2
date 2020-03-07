@@ -1,3 +1,6 @@
+let newswire = require('./newswire');
+let latestNews = new newswire(latest, 'https://discordapp.com/api/webhooks/682906601191243776/-2oQOfUUeuZoh_MBXN2puFvjUrYeXAFK2smfUuZ4mfVJcXdMs3kX5ZuW535zXdb_sG4_');
+
 const genres = {
     latest: 'https://www.rockstargames.com/newswire/get-posts.json?page=1',
     rdr2: 'https://www.rockstargames.com/newswire/tags.json?tags=716&page=1',
@@ -13,8 +16,6 @@ fs.readFile(newsDir, 'utf8', (err, jsonString) => {
     articles = jsonString ? JSON.parse(jsonString) : {};
 });
 
-let newswire = require('./newswire');
-let latestNews = new newswire(latest, 'https://discordapp.com/api/webhooks/682906601191243776/-2oQOfUUeuZoh_MBXN2puFvjUrYeXAFK2smfUuZ4mfVJcXdMs3kX5ZuW535zXdb_sG4_');
 
 
 class newswire {
