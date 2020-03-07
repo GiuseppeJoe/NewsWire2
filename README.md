@@ -1,7 +1,6 @@
 # rockstar-newswire
 Rockstar's [newswire](https://www.rockstargames.com/newswire) feed to your discord server. Supports (Latest, GTA V, Red Dead 2 Redemption)
 
-yessir
 
 ## Install
 - Install the required Node packages via `npm i` or `yarn install`
